@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    background: black;
+    position: fixed;
+    z-index: 1111111111;
+}
+
+.headerWrap {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brandLogo h1,
+.brandLogo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding: 26.5px 20px;
+}
+
+nav a:hover {
+    background: gold;
+    color: black;
+}
+
+
+/* HOME PAGE START*/
+
+.mySlides {
+    display: none;
+}
+
+.heroSlider {
+    height: 700px;
+    overflow: hidden;
+}
+
+.sliderButton {
+    background-color: black;
+    height: 100px;
+    width: 30px;
+    color: white;
+    border: none;
+}
+
+.sliderButton:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.leftSliderButton {
+    position: absolute;
+    top: 320px;
+    left: 0;
+}
+
+.rightSliderButton {
+    position: absolute;
+    top: 320px;
+    right: 0;
+}
+
+.featurImageSection {
+    height: 400px;
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+.featurImageSection h2 {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+}
+
+.featureImages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+    grid-gap: .3rem;
+    height: 200px;
+}
+
+.featureImages img {
+    width: 100%;
+    margin-top: 0.17rem;
+    cursor: pointer;
+    object-fit: cover;
+    height: 250px;
+}
+
+
+/* HOME PAGE END*/
+
+
+/* GALLERY PAGE START */
+
+.galleryHeader {
+    padding-top: 70px;
+}
+
+.galleryHeader h2 {
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+    grid-gap: .3rem;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+#gallery img {
+    width: 100%;
+    margin-top: 0.17rem;
+    cursor: pointer;
+    object-fit: cover;
+    height: 250px;
+}
+
+
+/* GALLERY PAGE END */
+
+.contactHeroSection {
+    width: 100%;
+    height: 300px;
+    background: burlywood;
+}
+
+.contactHeroSection h2 {
+    font-size: 40px;
+    line-height: 300px;
+    text-align: center;
+}
+
+.contactInformation {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.contactDetails {
+    float: left;
+    padding: 30px;
+    margin-top: 70px;
+}
+
+.phoneNumber,
+.emailAddress,
+.companyAddress {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.phoneNumber img,
+.emailAddress img,
+.companyAddress img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.contactForm {
+    width: 400px;
+    float: right;
+    padding: 30px;
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: 350px;
+    height: 40px;
+    border: 2px solid black;
+    margin-bottom: 5px;
+    padding: 3px 5px;
+    font-size: 15px;
+    resize: none;
+}
+
+.contactForm textarea {
+    width: 350px;
+    height: 150px;
+    border: 2px solid black;
+    margin-bottom: 5px;
+    padding: 3px 5px;
+    font-size: 15px;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+    outline: none;
+}
+
+.contactForm .sendMessage {
+    background: black;
+    color: white;
+    font-weight: 600;
+    height: 40px;
+}
+
+.contactForm .sendMessage:hover {
+    background: gold;
+    border: gold;
+    color: black;
+    font-weight: 600;
+    height: 40px;
+    cursor: pointer;
+}
+
+.subscribe {
+    padding: 50px;
+    width: 100%;
+}
+
+.subscriptText {
+    width: 300px;
+    height: 40px;
+    border: 2px solid black;
+    padding: 0 5px;
+    font-size: 14px;
+}
+
+.subscriptText:focus {
+    outline: none;
+}
+
+.subscriptButton {
+    height: 40px;
+    width: 100px;
+    background: black;
+    color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.subscriptButton:hover {
+    background: gold;
+    color: black;
+    border: 2px solid gold;
+}
+
+.subscribe h3 {
+    float: right;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+footer {
+    background: gold;
+    height: 250px;
+    width: 100%;
+}
+
+
+/* FOOTER AREA */
+
+.footerWrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.companyInfo h3 {
+    font-size: 30px;
+}
+
+.companyInfo {
+    max-width: 700px;
+}
+
+.footerSubscribForm {
+    padding: 20px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#gallery img {
+    width: 100%;
+    margin-top: 0.17rem;
+    cursor: pointer;
+    object-fit: cover;
+    height: 250px;
+}
+
+.thumb {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+    grid-gap: .3rem;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.thumb label {
+    flex: 1 1;
+    border: 2px solid #eee;
+    cursor: pointer;
+}
+
+.thumb img {
+    filter: grayscale(.7);
+}
+
+.thumb img:hover {
+    filter: grayscale(0);
+}
+
+.arrowButton {
+    background-color: black;
+    height: 100px;
+    width: 30px;
+    border: none;
+    color: white;
+    line-height: 100px;
+}
+
+.arrowButton:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.leftArrow {
+    position: absolute;
+    top: 320px;
+    left: 0;
+}
+
+.rightArrow {
+    position: absolute;
+    top: 320px;
+    right: 0;
+}
+
+.gallery {
+    position: fixed;
+    top: 0;
+    left: -9999px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: blur(2px);
+    -moz-backdrop-filter: blur(2px);
+    -ms-backdrop-filter: blur(2px);
+    -o-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    text-align: center;
+}
+
+.gallery img {
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+
+#img1:checked~.gallery,
+#img2:checked~.gallery,
+#img3:checked~.gallery {
+    left: 0;
+}
+
+.item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.pager {
+    position: absolute;
+    display: flex;
+    width: 100%;
+}
+
+.pager label.prev {
+    margin-right: auto
+}
+
+.pager label.next {
+    margin-left: auto
+}
+
+#close {
+    position: absolute;
+    top: 80px;
+    right: 8px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background-color: rgb(228, 17, 45);
+    border-radius: 200px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#close:hover {
+    cursor: pointer;
+    background-color: rgba(228, 17, 45, 0.6);
+}
+
+#img1:checked~.gallery #gal1 {
+    display: block
+}
+
+#img2:checked~.gallery #gal2 {
+    display: block
+}
+
+#img3:checked~.gallery #gal3 {
+    display: block
+}
